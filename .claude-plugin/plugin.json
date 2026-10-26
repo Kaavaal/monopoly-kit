@@ -1,0 +1,13 @@
+{
+  "name": "monopoly-kit",
+  "version": "1.0.0",
+  "description": "Adds a CRUD vertical slice to the monopoly-online API in four steps: /monopoly-kit:feature-plan, /monopoly-kit:feature-scaffold (generator in the shape of the first hand-written slice), /monopoly-kit:feature-tests, /monopoly-kit:feature-ship. Hooks keep bounded contexts apart and gate commits on the touched contexts' tests.",
+  "author": {
+    "name": "Kaavaal",
+    "url": "https://github.com/Kaavaal"
+  },
+  "homepage": "https://github.com/Kaavaal/monopoly-kit",
+  "repository": "https://github.com/Kaavaal/monopoly-kit",
+  "license": "MIT",
+  "keywords": ["fastify", "sqlite", "bounded-context", "scaffold", "crud", "hooks"]
+}
