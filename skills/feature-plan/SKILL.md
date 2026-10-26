@@ -60,7 +60,7 @@ POST, GET, GET /:id, PATCH /:id, DELETE /:id on /<plural>.
 
 ## Domain rules for feature-tests
 
-- <a rule the generated matrix does not cover, testable through HTTP — e.g. "an unknown ownerId is 400">
+- <a rule the generated matrix does not cover, testable through HTTP, e.g. "PATCH to another player's id transfers the deed">
 
 ```json slice
 { "context": "…", "entity": "…", "plural": "…", "summary": "…", "fields": [

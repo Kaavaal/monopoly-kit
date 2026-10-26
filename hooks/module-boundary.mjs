@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 // PreToolUse hook (Edit|Write|MultiEdit): a bounded context imports another one only through its
 // src/<context>/module.ts. Checks the file as it will be after the edit and blocks only the cross-context
-// imports the edit adds, so an older violation never blocks an unrelated change. Scope: Edit, Write and
-// MultiEdit; a Bash write (sed -i, a heredoc) never reaches this hook — `pnpm arch:check` is the backstop.
+// imports the edit adds, so an older violation never blocks an unrelated change. A Bash write
+// (sed -i, a heredoc) never reaches this hook, so `pnpm arch:check` is the backstop.
 import { journal } from './journal.mjs'
 import { existsSync, readFileSync } from 'node:fs'
 import { dirname, join, relative, resolve, sep } from 'node:path'

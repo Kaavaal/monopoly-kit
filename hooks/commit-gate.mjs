@@ -4,8 +4,7 @@
 // and arch:check over the whole tree. Checks the working tree, not the staged snapshot. The hook runs before
 // the command, so a `git add` earlier in the same line and `git commit <paths>` count by their pathspecs.
 // Only *.md and docs/ changes pass untouched; a file outside src/<ctx>/, test/<ctx>/ and migrations/ runs the
-// whole suite. A cd/-C target the hook cannot resolve ($VAR, $(…), missing) falls back to the session cwd.
-// The command splitting follows lesson 5's git-guardrails, made quote- and heredoc-aware.
+// whole suite.
 import { execFileSync, spawnSync } from 'node:child_process'
 import { existsSync, readFileSync } from 'node:fs'
 import { join, resolve } from 'node:path'

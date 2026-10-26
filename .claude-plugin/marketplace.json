@@ -1,6 +1,6 @@
 {
   "name": "monopoly-kit",
-  "description": "Single-plugin marketplace: install monopoly-kit straight from this repository.",
+  "description": "Single-plugin marketplace for installing monopoly-kit straight from this repository.",
   "owner": {
     "name": "Kaavaal",
     "url": "https://github.com/Kaavaal"
@@ -9,7 +9,7 @@
     {
       "name": "monopoly-kit",
       "source": "./",
-      "description": "Vertical-slice workflow for the monopoly-online API: plan, scaffold, tests, ship; context-boundary and commit-gate hooks.",
+      "description": "Vertical-slice workflow for the monopoly-online API with plan, scaffold, tests and ship steps, plus context-boundary and commit-gate hooks.",
       "version": "1.0.0",
       "category": "development",
       "tags": ["fastify", "sqlite", "scaffold", "hooks"],

@@ -15,8 +15,8 @@ Input: `$ARGUMENTS`, a context and an entity, e.g. `board property`.
 
 1. No context in the arguments, or no `docs/features/<context>-<entity>.md` → stop and say that this skill
    completes a slice planned by `/monopoly-kit:feature-plan`; never derive rules from the code. Otherwise read
-   the plan's "Domain rules for feature-tests" and `test/<context>/<entity>.test.ts`. The generated matrix already covers CRUD, schema 400s, 404s, 409s on unique
-   fields and unknown refs. Mark each rule *covered* (name the test) or *missing*.
+   the plan's "Domain rules for feature-tests" and `test/<context>/<entity>.test.ts`. The generated matrix already covers CRUD, schema 400s, unknown refs (400),
+   404s and 409s on unique fields. Mark each rule *covered* (name the test) or *missing*.
 2. Add one `it` per missing rule to the `describe` of its route, through HTTP with `makeTestApp()` and
    `app.inject`. Data of another context is created through its routes (e.g. `POST /players`), never its tables.
    Assert exact status, error code and body.
